@@ -44,6 +44,7 @@ An unsuccessful lookup will generate a response code of 404 with the following J
 
 A couple of reasons for unsuccessful lookup are either a location does not exist or there is no route between them. Here are a couple of examples for unsuccessful lookups and responses:
 
+
 Example 1 of a bad request. Using a location that does not exist (None):  
 GET: https://cs361-mapsapi.wl.r.appspot.com/driving/None/Space+Needle  
 Response Code: 404  
