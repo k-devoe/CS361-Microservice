@@ -7,7 +7,7 @@ This microservice provides the total route drive time in seconds and start and e
 
 ## Requests
 
-Requests to the API can be made through GET requests to the PUTURLHERE URL. Requests are made in the format of PUTURLHERE/driving/:origin/:destination where "origin" and "destination" are names of locations driving from and driving to input by the requestor.
+Requests to the API can be made through GET requests to the https://cs361-mapsapi.wl.r.appspot.com URL. Requests are made in the format of https://cs361-mapsapi.wl.r.appspot.com/driving/:origin/:destination where "origin" and "destination" are names of locations driving from and driving to input by the requestor.
 
 Note: For inputs with spaces such as "Pike Place Market", the spaces should be replaced with a "+" for example: "Pike+Place+Market"
 
@@ -40,7 +40,7 @@ Example response:
 
 An unsuccessful lookup will generate a response code of 404 with the following JSON information:
 
-- Error:          Reason for lookup failure as the error code from Google Maps API
+- Error: Reason for lookup failure as the error code from Google Maps API
 
 A couple of reasons for unsuccessful lookup are either a location does not exist or there is no route between them. Here are a couple of examples for unsuccessful lookups and responses:
 
