@@ -1,13 +1,13 @@
 
 from flask import Flask
 import constants
+import requests
 
 app = Flask(__name__)
 
 API_KEY = constants.API_KEY
 MAPS_API_URL = "https://maps.googleapis.com/maps/api/directions/json?"
 
-import requests
 
 
 @app.route('/')
