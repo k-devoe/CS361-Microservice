@@ -24,17 +24,17 @@ Responses will be in JSON format with 2 possible outcomes:
 
 A successful query will generate a response code of 200 with the following JSON information:
 
-- duration:         Total time of trip in seconds
-- startingAddress:  Full address of origin location
-- endingAddress:    Full address of destination location
+- duration:         Total time of trip in seconds  
+- startingAddress:  Full address of origin location  
+- endingAddress:    Full address of destination location  
 
-Example response:
+Example response:  
 
-{
-    "duration": 403,
-    "endingAddress": "400 Broad St, Seattle, WA 98109, USA",
-    "startingAddress": "Pike Place Market, Seattle, WA, USA"
-}
+{  
+    "duration": 403,  
+    "endingAddress": "400 Broad St, Seattle, WA 98109, USA",  
+    "startingAddress": "Pike Place Market, Seattle, WA, USA"  
+}  
 
 ### Unsuccessful lookup
 
@@ -44,19 +44,19 @@ An unsuccessful lookup will generate a response code of 404 with the following J
 
 A couple of reasons for unsuccessful lookup are either a location does not exist or there is no route between them. Here are a couple of examples for unsuccessful lookups and responses:
 
-Example 1 of a bad request. Using a location that does not exist (None):
-GET: https://cs361-mapsapi.wl.r.appspot.com/driving/None/Space+Needle
-Response Code: 404
-Example 1 Reponse:
-{
-    "Error": "NOT_FOUND"
-}
+Example 1 of a bad request. Using a location that does not exist (None):  
+GET: https://cs361-mapsapi.wl.r.appspot.com/driving/None/Space+Needle  
+Response Code: 404  
+Example 1 Reponse:  
+{  
+    "Error": "NOT_FOUND"  
+}  
 
-Example 2 of a bad request. Using a location that does not have a route to the destination (Seattle to Hawaii by car):
-GET: https://cs361-mapsapi.wl.r.appspot.com/driving/Space+Needle/Hawaii
-Response Code: 404
-Example 2 Response:
-{
-    "Error": "ZERO_RESULTS"
-}
+Example 2 of a bad request. Using a location that does not have a route to the destination (Seattle to Hawaii by car):  
+GET: https://cs361-mapsapi.wl.r.appspot.com/driving/Space+Needle/Hawaii  
+Response Code: 404  
+Example 2 Response:  
+{  
+    "Error": "ZERO_RESULTS"  
+}  
 
