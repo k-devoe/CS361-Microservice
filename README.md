@@ -61,3 +61,7 @@ Example 2 Response:
     "Error": "ZERO_RESULTS"  
 }  
 
+## UML Sequence Diagram
+
+<img width="571" alt="Screen Shot 2022-10-23 at 2 54 00 PM" src="https://user-images.githubusercontent.com/60839001/197415298-a412f990-0529-4e80-9beb-5a41eb939d5a.png">
+
